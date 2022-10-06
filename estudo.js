@@ -13,3 +13,18 @@ function escreva(){
     document.write(tabuada + " x 9 = " + (tabuada*9) + "<br>");
     document.write(tabuada + " x 10 = " + (tabuada*10) + "<br>");
 }
+let lista = ["Jorge","Duarte","Waldete","Raquel"];
+
+function mostra(){
+    document.write(lista.lenght + "<br>");
+    for(let i = 0; i < lista.lenght; i++){ //começa o for
+    document.write(lista[i] + "<br>");
+    }//termina for
+    
+}
+
+function mostraTabuada(){
+    for(let i = 1; i <= 10; i++){
+        document.write("O valor do i " + i + "<br>");
+    }
+}
