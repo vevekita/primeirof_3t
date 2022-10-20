@@ -40,3 +40,26 @@ function total(){
     }
     document.write("Resultado: " + r);
 }
+
+function somaNota(){
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
+
+    let r = Number(n1)+Number(n2)+Number(n3)+Number(n4);
+
+    document.getElementById("resul").innerHTML = "Soma: " + r;
+}
+
+function mediaNota(){
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
+    
+    let r = Number(n1)+Number(n2)+Number(n3)+Number(n4)/Number(4);
+
+    document.getElementById("resul").innerHTML = "Média: " + r;
+
+}
