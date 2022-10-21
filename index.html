@@ -5,23 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro F</title>
-    <script src="estudo.js"></script>
+  <script src="estudo.js">
+
+  </script>
 </head>
 <body>
-    Capital: <input id="valor" type="text"><br>
-    Juros mensais: <input id="juros" type="text"><br>
-    Nr. meses: <input id="meses" type="text"><br>
-    <button onclick="total()">Enviar</button>
+    Capital: <input id="valor" type="text"> <br>
+    Juros Mensais: <input id="juros" type="text"> <br>
+    Número de Meses: <input id="meses" type="text"> <br>
+    <button onclick="total()"> 
+        enviar
+    </button>
 
-    <br><br><br><br>
-    <span id="resul">Resultado: 0,00</span><br>
-    Bimestre 1: <input id="b1" type="text"><br>
-    Bimestre 2: <input id="b2" type="text"><br>
-    Bimestre 3: <input id="b3" type="text"><br>
-    Bimestre 4: <input id="b4" type="text"><br>
-    <button onclick="somaNota()">Soma das Notas</button>
-    <button onclick="mediaNota()">Média das Notas</button>
-    <button onclick="faltasobraNota()">Quanto falta ou sobra de 240?</button>
+    <br><br><br><br><br>
 
-</body>
+    Bimestre 1: <input id="b1" type="text" ><br>
+    Bimestre 2: <input id="b2" type="text" ><br>
+    Bimestre 3: <input id="b3" type="text" ><br>
+    Bimestre 4: <input id="b4" type="text" ><br>
+
+    <button onclick="somaNota()">
+        Soma das notas:
+    </button>
+    <span id="result">
+        Resultado: 0,00
+    </span><br>
+    <button onclick="media1()">
+        Média
+    </button>
+    <span id="result1">
+        Média: 0,00
+    </span><br>
+    <button onclick="subtracao()">
+        Quanto falta ou sobra para 240?
+    </button>
+    <span id="result2">
+        Menos 240: 0,00
+    </span><br>
+
+    </body>
 </html>
