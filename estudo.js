@@ -37,19 +37,19 @@ function total(){
     let j = document.getElementById("juros").value;
     let t = document.getElementById("meses").value;
     if (!Number(v)) {
-        alert("O campo Capital deve numérico.");
+        alert("O campo Capital deve conter apenas números.");
         document.getElementById("valor").value = "";
         document.getElementById("valor").focus();
         return
     }
     if (!Number(j)) {
-        alert("O campo Juros Meses deve numérico.");
+        alert("O campo Juros Mensais deve conter apenas números.");
         document.getElementById("juros").value = "";
         document.getElementById("juros").focus();
         return
     }
     if (!Number(t)) {
-        alert("O campo Número de Meses deve numérico.");
+        alert("O campo Número de Meses deve conter apenas números.");
         document.getElementById("meses").value = "";
         document.getElementById("meses").focus();
         return
