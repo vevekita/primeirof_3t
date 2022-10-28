@@ -55,12 +55,16 @@ function total(){
         return
     }
     let r = 0;
+    let texto = ""
     for(let i =1; i <= t; i++){ 
         r = v * (1+(j/100));
-        document.write ("Mês " + i + " - valor: " + moeda(r) + "<br>")
+        //document.write ("Mês " + i + " - valor: " + moeda(r) + "<br>")
+        texto += "Mês " + i + " - valor: " + moeda(r) + "<br>";
         v = r;   
     }
-    document.write ("Resultado: " + moeda(r));
+    document.getElementById("mes").innerHTML = texto;
+    document.getElementById("total").innerHTML = moeda(r);
+    //document.write ("Resultado: " + moeda(r));
 
 }
 
